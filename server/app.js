@@ -30,17 +30,20 @@ io.on('connect', function(socket) {
                     return;
                 }
             }
-            fn("result": false, "msg": "user not found");
+            fn({
+                "result": false,
+                "msg": "user not found"
+            });
         }
     })
 
-    socket.on('createQuestion', function(data, fn)) {
+    socket.on('createQuestion', function(data, fn) {
         questionList.push(data);
         fn({
             "result": true,
             "questionList": questionList
         });
-    }
+    })
 
     socket.on('readQuestionList', function(data, fn) {
         // ignore data
@@ -61,7 +64,10 @@ io.on('connect', function(socket) {
                     return;
                 }
             }
-            fn("result": false, "msg": "question not found");
+            fn({
+                "result": false,
+                "msg": "question not found"
+            });
         }
     });
 })
