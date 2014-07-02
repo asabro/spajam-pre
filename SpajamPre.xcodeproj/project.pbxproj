@@ -21,6 +21,7 @@
 		6C66EAA519642EF700E20173 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C66EA8719642EF700E20173 /* UIKit.framework */; };
 		6C66EAAD19642EF700E20173 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6C66EAAB19642EF700E20173 /* InfoPlist.strings */; };
 		6C66EAAF19642EF700E20173 /* SpajamPreTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C66EAAE19642EF700E20173 /* SpajamPreTests.m */; };
+		6C66EABA196434FD00E20173 /* AnswerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C66EAB9196434FD00E20173 /* AnswerViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		6C66EAAA19642EF700E20173 /* SpajamPreTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SpajamPreTests-Info.plist"; sourceTree = "<group>"; };
 		6C66EAAC19642EF700E20173 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6C66EAAE19642EF700E20173 /* SpajamPreTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpajamPreTests.m; sourceTree = "<group>"; };
+		6C66EAB8196434FD00E20173 /* AnswerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnswerViewController.h; sourceTree = "<group>"; };
+		6C66EAB9196434FD00E20173 /* AnswerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnswerViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +118,8 @@
 				6C66EA9219642EF700E20173 /* AppDelegate.h */,
 				6C66EA9319642EF700E20173 /* AppDelegate.m */,
 				6C66EA9519642EF700E20173 /* Main.storyboard */,
+				6C66EAB8196434FD00E20173 /* AnswerViewController.h */,
+				6C66EAB9196434FD00E20173 /* AnswerViewController.m */,
 				6C66EA9819642EF700E20173 /* ViewController.h */,
 				6C66EA9919642EF700E20173 /* ViewController.m */,
 				6C66EA9B19642EF700E20173 /* Images.xcassets */,
@@ -249,6 +254,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6C66EABA196434FD00E20173 /* AnswerViewController.m in Sources */,
 				6C66EA9A19642EF700E20173 /* ViewController.m in Sources */,
 				6C66EA9419642EF700E20173 /* AppDelegate.m in Sources */,
 				6C66EA9019642EF700E20173 /* main.m in Sources */,
