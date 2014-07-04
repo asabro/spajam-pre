@@ -7,9 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <AZSocketIO/AZSocketIO.h>
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
-
 @property (strong, nonatomic) UIWindow *window;
-
+@property (nonatomic, strong) AZSocketIO *socketIO;
++(AZSocketIO *) socketIO;
 @end

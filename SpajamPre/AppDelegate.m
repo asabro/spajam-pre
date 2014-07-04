@@ -12,10 +12,21 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
-    return YES;
+  _socketIO = [[AZSocketIO alloc] initWithHost:@"49.212.129.143" andPort:@"2000" secure:NO];
+  
+  [self.socketIO connectWithSuccess:^{
+    NSLog(@"Success connecting!");
+    [self.socketIO emit:@"authenticate" args:@{@"username": @"ryohei"} error:nil ackWithArgs:^(NSArray *data){
+      NSLog(@"%@", data);
+      NSLog(@"hello");
+    }];
+  } andFailure:^(NSError *error) {
+    NSLog(@"Failure connecting. error: %@", error);
+  }];
+  
+  return YES;
 }
-							
+
 - (void)applicationWillResignActive:(UIApplication *)application
 {
   // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
@@ -43,4 +54,8 @@
   // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 
++(AZSocketIO *) socketIO {
+  AppDelegate * delegate = [[UIApplication sharedApplication] delegate];
+  return delegate.socketIO;
+}
 @end

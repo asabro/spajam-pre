@@ -7,7 +7,6 @@
 //
 
 #import "Questions.h"
-#import "Question.h"
 
 @implementation NSMutableArray(Questions)
 - (void)load
