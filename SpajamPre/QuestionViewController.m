@@ -38,7 +38,6 @@
 
 - (void)setupLabels
 {
-  
   _textLabel.text = _question[kText];
   _usernameLabel.text = _question[kUsername];
   _posNumberLabel.text = [(NSNumber *)_question[kPosNumber] stringValue];
@@ -50,8 +49,8 @@
 
 - (void)didReceiveMemoryWarning
 {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+  [super didReceiveMemoryWarning];
+  // Dispose of any resources that can be recreated.
 }
 
 /*

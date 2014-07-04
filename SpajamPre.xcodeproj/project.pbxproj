@@ -23,7 +23,6 @@
 		6C66EAAD19642EF700E20173 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6C66EAAB19642EF700E20173 /* InfoPlist.strings */; };
 		6C66EAAF19642EF700E20173 /* SpajamPreTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C66EAAE19642EF700E20173 /* SpajamPreTests.m */; };
 		6CE4AAEE1966419D00A67BA3 /* Questions.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CE4AAED1966419D00A67BA3 /* Questions.m */; };
-		6CE4AAF11966835000A67BA3 /* Question.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CE4AAF01966835000A67BA3 /* Question.m */; };
 		D58F016F4D584D88BD5A0A9F /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 106F93B5E66941898DD9FC19 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -62,8 +61,6 @@
 		6C66EAAE19642EF700E20173 /* SpajamPreTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpajamPreTests.m; sourceTree = "<group>"; };
 		6CE4AAEC1966419D00A67BA3 /* Questions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Questions.h; sourceTree = "<group>"; };
 		6CE4AAED1966419D00A67BA3 /* Questions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Questions.m; sourceTree = "<group>"; };
-		6CE4AAEF1966835000A67BA3 /* Question.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Question.h; sourceTree = "<group>"; };
-		6CE4AAF01966835000A67BA3 /* Question.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Question.m; sourceTree = "<group>"; };
 		C5BEB32AAD62481B9BF1D0A7 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -175,8 +172,6 @@
 			children = (
 				6CE4AAEC1966419D00A67BA3 /* Questions.h */,
 				6CE4AAED1966419D00A67BA3 /* Questions.m */,
-				6CE4AAEF1966835000A67BA3 /* Question.h */,
-				6CE4AAF01966835000A67BA3 /* Question.m */,
 			);
 			name = Question;
 			sourceTree = "<group>";
@@ -316,7 +311,6 @@
 				6C56BD3D1965211E00AF6E17 /* QuestionViewController.m in Sources */,
 				6C66EA9A19642EF700E20173 /* ViewController.m in Sources */,
 				6CE4AAEE1966419D00A67BA3 /* Questions.m in Sources */,
-				6CE4AAF11966835000A67BA3 /* Question.m in Sources */,
 				6C66EA9419642EF700E20173 /* AppDelegate.m in Sources */,
 				6C66EA9019642EF700E20173 /* main.m in Sources */,
 			);
