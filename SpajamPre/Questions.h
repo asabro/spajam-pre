@@ -17,6 +17,5 @@
 #define kCreatedAt @"createdAt"
 
 @interface NSMutableArray(Questions)
-- (id)initWithCapacity:(NSUInteger)numItems;
 - (void)load;
 @end
