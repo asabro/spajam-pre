@@ -41,9 +41,9 @@
   
   _textLabel.text = _question[kText];
   _usernameLabel.text = _question[kUsername];
-  _posNumberLabel.text = _question[kPosNumber];
-  _negNumberLabel.text = _question[kNegNumber];
-  _answeredLabel.text = _question[kAnswered];
+  _posNumberLabel.text = [(NSNumber *)_question[kPosNumber] stringValue];
+  _negNumberLabel.text = [(NSNumber *)_question[kNegNumber] stringValue];
+  _answeredLabel.text = [(NSNumber *)_question[kAnswered] stringValue];
 //  _commentsLabel.text = _question[kComments];
   _createdAtLabel.text = _question[kCreatedAt];
 }
