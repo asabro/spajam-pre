@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  AnswerViewController.h
 //  SpajamPre
 //
 //  Created by 村上 晋太郎 on 2014/07/02.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
-
+@interface QuestionViewController : UIViewController
+@property (nonatomic) NSDictionary * question;
 @end

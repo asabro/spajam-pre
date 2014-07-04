@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6C56BD3D1965211E00AF6E17 /* QuestionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C56BD3C1965211E00AF6E17 /* QuestionViewController.m */; };
 		6C66EA8419642EF700E20173 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C66EA8319642EF700E20173 /* Foundation.framework */; };
 		6C66EA8619642EF700E20173 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C66EA8519642EF700E20173 /* CoreGraphics.framework */; };
 		6C66EA8819642EF700E20173 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C66EA8719642EF700E20173 /* UIKit.framework */; };
@@ -21,6 +22,9 @@
 		6C66EAA519642EF700E20173 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C66EA8719642EF700E20173 /* UIKit.framework */; };
 		6C66EAAD19642EF700E20173 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6C66EAAB19642EF700E20173 /* InfoPlist.strings */; };
 		6C66EAAF19642EF700E20173 /* SpajamPreTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C66EAAE19642EF700E20173 /* SpajamPreTests.m */; };
+		6CE4AAEE1966419D00A67BA3 /* Questions.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CE4AAED1966419D00A67BA3 /* Questions.m */; };
+		6CE4AAF11966835000A67BA3 /* Question.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CE4AAF01966835000A67BA3 /* Question.m */; };
+		D58F016F4D584D88BD5A0A9F /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 106F93B5E66941898DD9FC19 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +38,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		106F93B5E66941898DD9FC19 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C56BD3B1965211E00AF6E17 /* QuestionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestionViewController.h; sourceTree = "<group>"; };
+		6C56BD3C1965211E00AF6E17 /* QuestionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionViewController.m; sourceTree = "<group>"; };
 		6C66EA8019642EF700E20173 /* SpajamPre.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpajamPre.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C66EA8319642EF700E20173 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6C66EA8519642EF700E20173 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -53,6 +60,11 @@
 		6C66EAAA19642EF700E20173 /* SpajamPreTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SpajamPreTests-Info.plist"; sourceTree = "<group>"; };
 		6C66EAAC19642EF700E20173 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6C66EAAE19642EF700E20173 /* SpajamPreTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpajamPreTests.m; sourceTree = "<group>"; };
+		6CE4AAEC1966419D00A67BA3 /* Questions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Questions.h; sourceTree = "<group>"; };
+		6CE4AAED1966419D00A67BA3 /* Questions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Questions.m; sourceTree = "<group>"; };
+		6CE4AAEF1966835000A67BA3 /* Question.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Question.h; sourceTree = "<group>"; };
+		6CE4AAF01966835000A67BA3 /* Question.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Question.m; sourceTree = "<group>"; };
+		C5BEB32AAD62481B9BF1D0A7 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +75,7 @@
 				6C66EA8619642EF700E20173 /* CoreGraphics.framework in Frameworks */,
 				6C66EA8819642EF700E20173 /* UIKit.framework in Frameworks */,
 				6C66EA8419642EF700E20173 /* Foundation.framework in Frameworks */,
+				D58F016F4D584D88BD5A0A9F /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,6 +99,7 @@
 				6C66EAA819642EF700E20173 /* SpajamPreTests */,
 				6C66EA8219642EF700E20173 /* Frameworks */,
 				6C66EA8119642EF700E20173 /* Products */,
+				C5BEB32AAD62481B9BF1D0A7 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,6 +119,7 @@
 				6C66EA8519642EF700E20173 /* CoreGraphics.framework */,
 				6C66EA8719642EF700E20173 /* UIKit.framework */,
 				6C66EAA219642EF700E20173 /* XCTest.framework */,
+				106F93B5E66941898DD9FC19 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -112,6 +127,9 @@
 		6C66EA8919642EF700E20173 /* SpajamPre */ = {
 			isa = PBXGroup;
 			children = (
+				6CE4AAEB1966418300A67BA3 /* Question */,
+				6C56BD3B1965211E00AF6E17 /* QuestionViewController.h */,
+				6C56BD3C1965211E00AF6E17 /* QuestionViewController.m */,
 				6C66EA9219642EF700E20173 /* AppDelegate.h */,
 				6C66EA9319642EF700E20173 /* AppDelegate.m */,
 				6C66EA9519642EF700E20173 /* Main.storyboard */,
@@ -152,6 +170,17 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		6CE4AAEB1966418300A67BA3 /* Question */ = {
+			isa = PBXGroup;
+			children = (
+				6CE4AAEC1966419D00A67BA3 /* Questions.h */,
+				6CE4AAED1966419D00A67BA3 /* Questions.m */,
+				6CE4AAEF1966835000A67BA3 /* Question.h */,
+				6CE4AAF01966835000A67BA3 /* Question.m */,
+			);
+			name = Question;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -159,9 +188,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6C66EAB219642EF700E20173 /* Build configuration list for PBXNativeTarget "SpajamPre" */;
 			buildPhases = (
+				F5C3AE4FB9DE467BA88C954F /* Check Pods Manifest.lock */,
 				6C66EA7C19642EF700E20173 /* Sources */,
 				6C66EA7D19642EF700E20173 /* Frameworks */,
 				6C66EA7E19642EF700E20173 /* Resources */,
+				D8D07F1913FD4E7CA6B7C7B0 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -244,12 +275,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		D8D07F1913FD4E7CA6B7C7B0 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F5C3AE4FB9DE467BA88C954F /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		6C66EA7C19642EF700E20173 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6C56BD3D1965211E00AF6E17 /* QuestionViewController.m in Sources */,
 				6C66EA9A19642EF700E20173 /* ViewController.m in Sources */,
+				6CE4AAEE1966419D00A67BA3 /* Questions.m in Sources */,
+				6CE4AAF11966835000A67BA3 /* Question.m in Sources */,
 				6C66EA9419642EF700E20173 /* AppDelegate.m in Sources */,
 				6C66EA9019642EF700E20173 /* main.m in Sources */,
 			);
@@ -373,6 +440,7 @@
 		};
 		6C66EAB319642EF700E20173 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C5BEB32AAD62481B9BF1D0A7 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -386,6 +454,7 @@
 		};
 		6C66EAB419642EF700E20173 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C5BEB32AAD62481B9BF1D0A7 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -456,6 +525,7 @@
 				6C66EAB419642EF700E20173 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6C66EAB519642EF700E20173 /* Build configuration list for PBXNativeTarget "SpajamPreTests" */ = {
 			isa = XCConfigurationList;
@@ -464,6 +534,7 @@
 				6C66EAB719642EF700E20173 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
