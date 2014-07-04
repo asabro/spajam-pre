@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6C56BD3D1965211E00AF6E17 /* AnswerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C56BD3C1965211E00AF6E17 /* AnswerViewController.m */; };
+		6C56BD3D1965211E00AF6E17 /* QuestionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C56BD3C1965211E00AF6E17 /* QuestionViewController.m */; };
 		6C66EA8419642EF700E20173 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C66EA8319642EF700E20173 /* Foundation.framework */; };
 		6C66EA8619642EF700E20173 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C66EA8519642EF700E20173 /* CoreGraphics.framework */; };
 		6C66EA8819642EF700E20173 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C66EA8719642EF700E20173 /* UIKit.framework */; };
@@ -38,8 +38,8 @@
 
 /* Begin PBXFileReference section */
 		106F93B5E66941898DD9FC19 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		6C56BD3B1965211E00AF6E17 /* AnswerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnswerViewController.h; sourceTree = "<group>"; };
-		6C56BD3C1965211E00AF6E17 /* AnswerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnswerViewController.m; sourceTree = "<group>"; };
+		6C56BD3B1965211E00AF6E17 /* QuestionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestionViewController.h; sourceTree = "<group>"; };
+		6C56BD3C1965211E00AF6E17 /* QuestionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionViewController.m; sourceTree = "<group>"; };
 		6C66EA8019642EF700E20173 /* SpajamPre.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpajamPre.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C66EA8319642EF700E20173 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6C66EA8519642EF700E20173 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -125,8 +125,8 @@
 			isa = PBXGroup;
 			children = (
 				6CE4AAEB1966418300A67BA3 /* Question */,
-				6C56BD3B1965211E00AF6E17 /* AnswerViewController.h */,
-				6C56BD3C1965211E00AF6E17 /* AnswerViewController.m */,
+				6C56BD3B1965211E00AF6E17 /* QuestionViewController.h */,
+				6C56BD3C1965211E00AF6E17 /* QuestionViewController.m */,
 				6C66EA9219642EF700E20173 /* AppDelegate.h */,
 				6C66EA9319642EF700E20173 /* AppDelegate.m */,
 				6C66EA9519642EF700E20173 /* Main.storyboard */,
@@ -308,7 +308,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6C56BD3D1965211E00AF6E17 /* AnswerViewController.m in Sources */,
+				6C56BD3D1965211E00AF6E17 /* QuestionViewController.m in Sources */,
 				6C66EA9A19642EF700E20173 /* ViewController.m in Sources */,
 				6CE4AAEE1966419D00A67BA3 /* Questions.m in Sources */,
 				6C66EA9419642EF700E20173 /* AppDelegate.m in Sources */,

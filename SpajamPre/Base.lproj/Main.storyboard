@@ -44,10 +44,10 @@
             </objects>
             <point key="canvasLocation" x="710" y="79"/>
         </scene>
-        <!--Answer View Controller-->
+        <!--Question View Controller-->
         <scene sceneID="VUE-ZJ-NDH">
             <objects>
-                <viewController id="y9a-ow-eau" customClass="AnswerViewController" sceneMemberID="viewController">
+                <viewController id="y9a-ow-eau" customClass="QuestionViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jhg-p6-DbO"/>
                         <viewControllerLayoutGuide type="bottom" id="KBh-hq-b03"/>

@@ -6,13 +6,13 @@
 //  Copyright (c) 2014年 村上 晋太郎. All rights reserved.
 //
 
-#import "AnswerViewController.h"
+#import "QuestionViewController.h"
 
-@interface AnswerViewController ()
+@interface QuestionViewController ()
 
 @end
 
-@implementation AnswerViewController
+@implementation QuestionViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
