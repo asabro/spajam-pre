@@ -8,15 +8,16 @@
 
 #import "ViewController.h"
 #import "QuestionViewController.h"
+#import "AddQuestionViewController.h"
 #import "Questions.h"
+
+#define kQuestionSegue @"QuestionView"
+#define kAddQuestionSegue @"AddQuestionView"
 
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property NSMutableArray * questions;
 @property NSDictionary * selectedQuestion;
-
-// labels
-
 @end
 
 @implementation ViewController
@@ -43,8 +44,14 @@
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-  QuestionViewController * viewControlelr = segue.destinationViewController;
-  viewControlelr.question = _selectedQuestion;
+  NSString * identifier = segue.identifier;
+  if ([identifier isEqualToString:kQuestionSegue]) {
+    QuestionViewController * viewControlelr = segue.destinationViewController;
+    viewControlelr.question = _selectedQuestion;
+  } else if ([identifier isEqualToString:kAddQuestionSegue]) {
+//    AddQuestionViewController * viewController = segue.destinationViewController;
+//    
+  }
 }
 
 # pragma mark - UITableViewDataSource
@@ -68,11 +75,10 @@
 }
 
 # pragma mark - UITableViewDelegate
-
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
   _selectedQuestion = _questions[indexPath.row];
-  [self performSegueWithIdentifier:@"pushAnswerView" sender:self];
+  [self performSegueWithIdentifier:kQuestionSegue sender:self];
 }
 
 @end

@@ -34,15 +34,39 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="mVP-9G-UTw"/>
+                    <navigationItem key="navigationItem" id="mVP-9G-UTw">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="2Pw-5M-y92">
+                            <connections>
+                                <segue destination="S5x-ib-qeq" kind="push" identifier="AddQuestion" id="XpE-8p-PJr"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="olA-ZI-sg9" id="hST-Nd-ZZk"/>
-                        <segue destination="y9a-ow-eau" kind="push" identifier="pushAnswerView" id="OvI-A9-bgp"/>
+                        <segue destination="y9a-ow-eau" kind="push" identifier="QuestionView" id="OvI-A9-bgp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="710" y="79"/>
+        </scene>
+        <!--Add Question View Controller-->
+        <scene sceneID="ahU-sd-Lgr">
+            <objects>
+                <viewController id="S5x-ib-qeq" customClass="AddQuestionViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="sRs-YF-4tH"/>
+                        <viewControllerLayoutGuide type="bottom" id="nOn-6h-iP4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="7ob-ae-Umw">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nGH-CA-aWU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="710" y="856"/>
         </scene>
         <!--Question View Controller-->
         <scene sceneID="VUE-ZJ-NDH">
