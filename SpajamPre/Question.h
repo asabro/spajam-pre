@@ -8,14 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-#define kText @"text"
-#define kUsername @"username"
-#define kPosNumber @"posNumber"
-#define kNegNumber @"negNumber"
-#define kAnswered @"answered"
-#define kComments @"comments"
-#define kCreatedAt @"createdAt"
-
 @interface Question : NSObject
 @property (nonatomic, strong) NSString * text;
 @property (nonatomic, strong) NSString * username;
