@@ -16,6 +16,7 @@
   
   [self.socketIO connectWithSuccess:^{
     NSLog(@"Success connecting!");
+    NSError * error;
     [self.socketIO emit:@"authenticate" args:@{@"username": @"ryohei"} error:nil ackWithArgs:^(NSArray *data){
       NSLog(@"%@", data);
       NSLog(@"hello");

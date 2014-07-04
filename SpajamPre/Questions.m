@@ -7,6 +7,7 @@
 //
 
 #import "Questions.h"
+#import "AppDelegate.h"
 
 @implementation NSMutableArray(Questions)
 - (void)load
