@@ -22,6 +22,7 @@
 		6C66EAA519642EF700E20173 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C66EA8719642EF700E20173 /* UIKit.framework */; };
 		6C66EAAD19642EF700E20173 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6C66EAAB19642EF700E20173 /* InfoPlist.strings */; };
 		6C66EAAF19642EF700E20173 /* SpajamPreTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C66EAAE19642EF700E20173 /* SpajamPreTests.m */; };
+		6CE4AAEE1966419D00A67BA3 /* Questions.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CE4AAED1966419D00A67BA3 /* Questions.m */; };
 		D58F016F4D584D88BD5A0A9F /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 106F93B5E66941898DD9FC19 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -58,6 +59,8 @@
 		6C66EAAA19642EF700E20173 /* SpajamPreTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SpajamPreTests-Info.plist"; sourceTree = "<group>"; };
 		6C66EAAC19642EF700E20173 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6C66EAAE19642EF700E20173 /* SpajamPreTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpajamPreTests.m; sourceTree = "<group>"; };
+		6CE4AAEC1966419D00A67BA3 /* Questions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Questions.h; sourceTree = "<group>"; };
+		6CE4AAED1966419D00A67BA3 /* Questions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Questions.m; sourceTree = "<group>"; };
 		C5BEB32AAD62481B9BF1D0A7 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -121,6 +124,7 @@
 		6C66EA8919642EF700E20173 /* SpajamPre */ = {
 			isa = PBXGroup;
 			children = (
+				6CE4AAEB1966418300A67BA3 /* Question */,
 				6C56BD3B1965211E00AF6E17 /* AnswerViewController.h */,
 				6C56BD3C1965211E00AF6E17 /* AnswerViewController.m */,
 				6C66EA9219642EF700E20173 /* AppDelegate.h */,
@@ -161,6 +165,15 @@
 				6C66EAAB19642EF700E20173 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6CE4AAEB1966418300A67BA3 /* Question */ = {
+			isa = PBXGroup;
+			children = (
+				6CE4AAEC1966419D00A67BA3 /* Questions.h */,
+				6CE4AAED1966419D00A67BA3 /* Questions.m */,
+			);
+			name = Question;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -297,6 +310,7 @@
 			files = (
 				6C56BD3D1965211E00AF6E17 /* AnswerViewController.m in Sources */,
 				6C66EA9A19642EF700E20173 /* ViewController.m in Sources */,
+				6CE4AAEE1966419D00A67BA3 /* Questions.m in Sources */,
 				6C66EA9419642EF700E20173 /* AppDelegate.m in Sources */,
 				6C66EA9019642EF700E20173 /* main.m in Sources */,
 			);
