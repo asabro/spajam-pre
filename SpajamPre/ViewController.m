@@ -7,11 +7,16 @@
 //
 
 #import "ViewController.h"
+#import "QuestionViewController.h"
 #import "Questions.h"
 
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
-@property (strong) NSMutableArray * questions;
+@property NSMutableArray * questions;
+@property NSDictionary * selectedQuestion;
+
+// labels
+
 @end
 
 @implementation ViewController
@@ -32,6 +37,14 @@
 {
   [super didReceiveMemoryWarning];
   // Dispose of any resources that can be recreated.
+}
+
+# pragma mark - segue
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+  QuestionViewController * viewControlelr = segue.destinationViewController;
+  viewControlelr.question = _selectedQuestion;
 }
 
 # pragma mark - UITableViewDataSource
@@ -58,6 +71,7 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+  _selectedQuestion = _questions[indexPath.row];
   [self performSegueWithIdentifier:@"pushAnswerView" sender:self];
 }
 

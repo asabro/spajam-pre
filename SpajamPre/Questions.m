@@ -7,8 +7,21 @@
 //
 
 #import "Questions.h"
+#import "Question.h"
 
-@implementation NSMutableArray(Questions)
+@interface Questions()
+@property NSMutableArray * array;
+@end
+
+@implementation Questions
+- (id) init {
+  self = [super init];
+  if (self) {
+    _array = [NSMutableArray array];
+  }
+  return self;
+}
+
 - (void)load
 {
   NSArray * array =
@@ -40,7 +53,9 @@
   ];
   
   [array enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL * stop) {
-    [self addObject:obj];
+    [_array addObject:obj];
   }];
 }
+
+
 @end

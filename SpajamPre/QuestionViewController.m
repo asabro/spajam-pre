@@ -7,26 +7,45 @@
 //
 
 #import "QuestionViewController.h"
+#import "Questions.h"
 
 @interface QuestionViewController ()
-
+// labels
+@property (weak, nonatomic) IBOutlet UILabel * textLabel;
+@property (weak, nonatomic) IBOutlet UILabel * usernameLabel;
+@property (weak, nonatomic) IBOutlet UILabel * posNumberLabel;
+@property (weak, nonatomic) IBOutlet UILabel * negNumberLabel;
+@property (weak, nonatomic) IBOutlet UILabel * answeredLabel;
+@property (weak, nonatomic) IBOutlet UILabel * commentsLabel;
+@property (weak, nonatomic) IBOutlet UILabel * createdAtLabel;
 @end
 
 @implementation QuestionViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
+  self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+  if (self) {
+  }
+  return self;
 }
 
 - (void)viewDidLoad
 {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view.
+  [super viewDidLoad];
+  [self setupLabels];
+}
+
+- (void)setupLabels
+{
+  
+  _textLabel.text = _question[kText];
+  _usernameLabel.text = _question[kUsername];
+  _posNumberLabel.text = _question[kPosNumber];
+  _negNumberLabel.text = _question[kNegNumber];
+  _answeredLabel.text = _question[kAnswered];
+//  _commentsLabel.text = _question[kComments];
+  _createdAtLabel.text = _question[kCreatedAt];
 }
 
 - (void)didReceiveMemoryWarning
