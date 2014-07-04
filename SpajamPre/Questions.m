@@ -8,9 +8,47 @@
 
 #import "Questions.h"
 
+#define kText @"text"
+#define kUsername @"username"
+#define kPosNumber @"posNumber"
+#define kNegNumber @"negNumber"
+#define kAnswered @"answered"
+#define kComments @"comments"
+#define kCreatedAt @"createdAt"
+
 @implementation Questions
 - (void)load
 {
-  // To Do
+  NSArray * array =
+  @[
+    @{kText: @"こんにちは",
+      kUsername: @"もやし",
+      kPosNumber: @100,
+      kNegNumber: @200,
+      kAnswered: @NO,
+      kComments: @[],
+      kCreatedAt: @"2012-12-12",
+      },
+    @{kText: @"おはよう",
+      kUsername: @"ふしみ",
+      kPosNumber: @300,
+      kNegNumber: @200,
+      kAnswered: @NO,
+      kComments: @[],
+      kCreatedAt: @"2014-03-31",
+      },
+    @{kText: @"おやすみ",
+      kUsername: @"むなかた",
+      kPosNumber: @500,
+      kNegNumber: @100,
+      kAnswered: @YES,
+      kComments: @[],
+      kCreatedAt: @"2013-08-01",
+      },
+  ];
+  
+  [array enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL * stop) {
+    [self addObject:obj];
+  }];
 }
 @end
