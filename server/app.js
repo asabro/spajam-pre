@@ -1,4 +1,5 @@
 var io = require('socket.io').listen(2000);
+var mongo = require('mongodb').MongoClient;
 
 var userlist = [{
     username: "shintaro",
@@ -20,6 +21,7 @@ io.on('connect', function(socket) {
     });
 
     socket.on('authenticate', function(data, fn) {
+        console.log('authenticate', data);
         if (data.username) {
             for (var i = 0; i < userList.length; i++) {
                 if (userList[i].username == data.username) {
@@ -38,6 +40,7 @@ io.on('connect', function(socket) {
     })
 
     socket.on('createQuestion', function(data, fn) {
+        console.log('createQuestion', data);
         questionList.push(data);
         fn({
             "result": true,
@@ -46,6 +49,7 @@ io.on('connect', function(socket) {
     })
 
     socket.on('readQuestionList', function(data, fn) {
+        console.log('readQuestionList', data);
         // ignore data
         fn({
             "result": true,
@@ -54,6 +58,7 @@ io.on('connect', function(socket) {
     })
 
     socket.on('readQuestionDetail', function(data, fn) {
+        console.log('readQuestionDetail', data);
         if (data.questionId) {
             for (var i = 0; i < questionId.length; i++) {
                 if (questionList[i].questionId == data.questionId) {
