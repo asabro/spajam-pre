@@ -8,15 +8,7 @@
 
 #import "Questions.h"
 
-#define kText @"text"
-#define kUsername @"username"
-#define kPosNumber @"posNumber"
-#define kNegNumber @"negNumber"
-#define kAnswered @"answered"
-#define kComments @"comments"
-#define kCreatedAt @"createdAt"
-
-@implementation Questions
+@implementation NSMutableArray(Questions)
 - (void)load
 {
   NSArray * array =
